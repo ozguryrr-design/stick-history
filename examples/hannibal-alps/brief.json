@@ -1,0 +1,50 @@
+{
+  "topic": "MÖ 218 — Hannibal'ın 37 Savaş Filiyle Alpleri Geçişi",
+  "event": "İkinci Pön Savaşı'nda Hannibal Barca'nın Kartaca ordusu ve 37 savaş filiyle Alpleri aşarak İtalya'ya girmesi",
+  "date": "Ekim - Kasım MÖ 218",
+  "place": "Batı Alpler ve Po Ovası (Kuzey İtalya)",
+  "formats": ["16:9", "9:16"],
+  "target_seconds": 20,
+  "people": [
+    {"id": "hannibal", "name": "Hannibal Barca", "role": "29 yaşındaki Kartacalı başkomutan"},
+    {"id": "mahout", "name": "Kartacalı Fil Sürücüsü", "role": "Savaş fili üzerindeki muhafız"},
+    {"id": "roman", "name": "Roma Gözcüsü", "role": "Kuzey İtalya sınırındaki lejyoner"}
+  ],
+  "clothing": {
+    "hannibal": "Bronz sorguçlu Helenistik-Kartaca miğferi, kırmızı tunik üzerine pul/keten zırh (linothorax), erguvani pelerin",
+    "mahout": "Keten baş sargısı, yün tunik, mızrak",
+    "roman": "Bronz Montefortino miğferi, kırmızı tunik, zırh, scutum kalkan"
+  },
+  "objects": [
+    "Savaş fili (kuleli/haudajlı)",
+    "Mızrak (dory/hasta) ve kılıç (xiphos/falcata)",
+    "Kalkan (yuvarlak Kartaca kalkanı ve Roma scutum'u)",
+    "Meşale"
+  ],
+  "architecture": [
+    "Roma sınır surları ve gözetleme burçları",
+    "Ordugah çadırları"
+  ],
+  "landscape": "Alplerin sarp ve karlı zirveleri, uçurum kenarı dar patikalar, çam ağaçları, fırtına ve tipi",
+  "avoid": [
+    "barut",
+    "top",
+    "tüfek",
+    "fes",
+    "buharlı gemi"
+  ],
+  "facts": [
+    {
+      "claim": "Hannibal MÖ 218 sonbaharında 37 savaş filiyle Alpleri 15 günde aştı.",
+      "source": "Polybius, Histories, Kitap III, 42-56"
+    },
+    {
+      "claim": "Soğuk, çığ ve uçurumlar yüzünden ordusunun neredeyse yarısını kaybetti ama Po Ovası'na 26.000 askerle inmeyi başardı.",
+      "source": "Polybius, Histories, III.56 (Lacinium bronz yazıtı verisi); Livy, Ab Urbe Condita, XXI.38"
+    }
+  ],
+  "sources": [
+    "Polybius, Histories, Book III (35-56)",
+    "Titus Livius (Livy), Ab Urbe Condita, Book XXI (32-38)"
+  ]
+}

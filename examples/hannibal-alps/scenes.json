@@ -1,0 +1,570 @@
+{
+  "title": "MÖ 218 — Hannibal'ın 37 Savaş Filiyle Alpleri Geçişi",
+  "fps": 30,
+  "tail": 0.9,
+  "time": "dusk",
+  "formats": ["16:9", "9:16"],
+  "cast": {
+    "hannibal": {
+      "skin": "skin2",
+      "build": "broad",
+      "beard": {"style": "short", "color": "black"},
+      "mustache": true,
+      "head": [
+        {"shape": "cap", "color": "bronze", "accent": "gold"},
+        {"shape": "cheek", "color": "bronze"},
+        {"shape": "crest", "color": "crimson", "h": 0.85}
+      ],
+      "outfit": [
+        {"kind": "cape", "color": "purple", "wind": 0.45},
+        {"kind": "tunic", "color": "crimson", "trim": "gold"},
+        {"kind": "armor", "color": "bronze", "pattern": "scales", "trim": "gold"},
+        {"kind": "sash", "color": "gold"}
+      ],
+      "sleeves": "crimson",
+      "legwear": "bronze",
+      "hold": {
+        "near": {"kind": "saber", "color": "steel", "hilt": "gold"}
+      }
+    },
+    "mahout": {
+      "skin": "skin3",
+      "build": "normal",
+      "head": [
+        {"shape": "dome", "color": "gold", "h": 1.0, "w": 1.18, "wrap": 3},
+        {"shape": "plume", "color": "crimson", "px": 0.2, "py": -1.25, "h": 0.8}
+      ],
+      "outfit": [
+        {"kind": "tunic", "color": "crimson", "trim": "gold"},
+        {"kind": "sash", "color": "gold"}
+      ],
+      "sleeves": "crimson",
+      "legwear": "tan",
+      "hold": {
+        "near": {"kind": "spear", "color": "wood"}
+      }
+    },
+    "carthaginian": {
+      "skin": "skin2",
+      "build": "normal",
+      "beard": {"style": "stubble", "color": "black"},
+      "head": [
+        {"shape": "cone", "color": "bronze", "h": 1.15, "accent": "gold"},
+        {"shape": "cheek", "color": "bronze"}
+      ],
+      "outfit": [
+        {"kind": "tunic", "color": "navy", "trim": "gold"},
+        {"kind": "armor", "color": "bronze", "trim": "crimson"}
+      ],
+      "sleeves": "navy",
+      "legwear": "tan",
+      "hold": {
+        "near": {"kind": "spear", "color": "wood"},
+        "far": {"kind": "shield", "shape": "round", "color": "bronze", "rim": "gold", "emblem": "crescent"}
+      }
+    },
+    "roman": {
+      "skin": "skin1",
+      "build": "stocky",
+      "head": [
+        {"shape": "cap", "color": "bronze", "accent": "gold"},
+        {"shape": "cheek", "color": "bronze"},
+        {"shape": "crest", "color": "crimson", "h": 0.78}
+      ],
+      "outfit": [
+        {"kind": "tunic", "color": "crimson", "trim": "gold"},
+        {"kind": "armor", "color": "iron", "trim": "gold"},
+        {"kind": "belt", "color": "leather"}
+      ],
+      "sleeves": "crimson",
+      "legwear": "tan",
+      "hold": {
+        "near": {"kind": "spear", "color": "wood"},
+        "far": {"kind": "shield", "shape": "scutum", "color": "crimson", "rim": "gold", "emblem": "lightning"}
+      }
+    }
+  },
+  "shots": [
+    {
+      "id": "S1",
+      "start": 0,
+      "transition": "cut",
+      "time": "day",
+      "ground": false,
+      "camera": {"frame": "stage", "move": "push_in", "amount": 0.2},
+      "hits": [1.37],
+      "layers": [
+        {
+          "depth": 1.0,
+          "items": [
+            {
+              "kind": "map",
+              "x0": -300,
+              "y0": -160,
+              "w": 2520,
+              "h": 1400,
+              "sea_color": "water",
+              "land_color": "sandstone",
+              "lands": [
+                {
+                  "points": [[-220, 810], [180, 520], [460, 380], [760, 330], [920, 400], [730, 540], [440, 640], [210, 820], [-220, 820]],
+                  "name": "İBERYA & GALYA",
+                  "lx": 450,
+                  "ly": 510,
+                  "size": 28
+                },
+                {
+                  "points": [[880, 355], [1140, 420], [1380, 690], [1260, 770], [1050, 580], [890, 475]],
+                  "name": "İTALYA",
+                  "lx": 1110,
+                  "ly": 530,
+                  "size": 30
+                },
+                {
+                  "points": [[120, 875], [1120, 845], [1360, 1080], [80, 1080]],
+                  "name": "KARTACA",
+                  "lx": 740,
+                  "ly": 955,
+                  "size": 32
+                }
+              ],
+              "routes": [
+                {
+                  "points": [[780, 845], [960, 725], [1120, 630]],
+                  "color": "slate",
+                  "from": 0.2,
+                  "to": 1.2,
+                  "dashed": true,
+                  "width": 8
+                },
+                {
+                  "points": [[280, 660], [480, 490], [720, 385], [920, 380], [1040, 475]],
+                  "color": "crimson",
+                  "from": 0.65,
+                  "to": 2.5,
+                  "dashed": true,
+                  "width": 11
+                }
+              ],
+              "pins": [
+                {"x": 960, "y": 720, "label": "Deniz Ablukası", "icon": "battle", "t": 0.35, "pulse": true},
+                {"x": 915, "y": 365, "label": "Alpler (2.400 km)", "icon": "star", "t": 1.45, "pulse": true},
+                {"x": 1160, "y": 590, "label": "Roma", "icon": "star", "t": 0.2, "pulse": true}
+              ]
+            }
+          ]
+        }
+      ],
+      "text": [
+        {
+          "kind": "year",
+          "prefix": "MÖ ",
+          "from": 264,
+          "to": 218,
+          "t": 0.1,
+          "until": 2.7,
+          "sub": "II. PÖN SAVAŞI · BATI AKDENİZ",
+          "y": 0.15,
+          "size": 136
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "start": "s:1",
+      "transition": "whip",
+      "time": "dusk",
+      "camera": [
+        {"t": 0, "frame": "wide", "on": ["hannibal", "officer"]},
+        {"t": "82%", "frame": "medium", "on": "hannibal", "rot": -1.8, "ease": "in_out_cubic"}
+      ],
+      "hits": ["w:20"],
+      "layers": [
+        {
+          "depth": 4.5,
+          "items": [
+            {"kind": "mountains", "h": 430, "y": 730, "color": "slate", "snow": true}
+          ]
+        },
+        {
+          "depth": 2.2,
+          "items": [
+            {"kind": "hills", "h": 190, "y": 790, "color": "forest"},
+            {"kind": "tree", "type": "pine", "x": 380, "y": 800, "h": 320},
+            {"kind": "tree", "type": "pine", "x": 1520, "y": 800, "h": 340},
+            {"kind": "tent", "x": 540, "y": 815, "w": 240, "h": 170, "color": "crimson", "stripes": "gold"}
+          ]
+        },
+        {
+          "depth": 1.3,
+          "items": [
+            {"kind": "banner", "x": 680, "y": 835, "colors": ["purple", "gold"], "emblem": "crescent", "emblem_color": "gold"},
+            {"kind": "banner", "x": 1240, "y": 835, "colors": ["crimson", "gold"], "emblem": "sun", "emblem_color": "gold"},
+            {"kind": "fire", "x": 940, "y": 845, "scale": 1.1}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "hannibal",
+          "x": 800,
+          "mount": {"type": "horse", "color": "chestnut", "tack": "gold"},
+          "pose": "ride",
+          "expr": "determined",
+          "talk": true,
+          "keys": [
+            {"t": "35%", "x": 850, "pose": "point", "expr": "shout", "ease": "out_back"}
+          ]
+        },
+        {
+          "id": "officer",
+          "cast": "carthaginian",
+          "x": 1030,
+          "face": -1,
+          "pose": "guard",
+          "expr": "determined",
+          "keys": [
+            {"t": "48%", "pose": "cheer"}
+          ]
+        }
+      ],
+      "lights": [
+        {"x": 940, "y": 720, "r": 540, "color": "#ffa84a", "strength": 0.38, "flicker": 1}
+      ],
+      "fx": ["embers"],
+      "text": [
+        {"kind": "label", "text": "Hannibal Barca (29)", "sub": "MÖ 218 · KARTACA BAŞKOMUTANI", "t": 0.2}
+      ]
+    },
+    {
+      "id": "S3",
+      "start": "s:2",
+      "transition": "whip",
+      "time": "storm",
+      "camera": {"frame": "wide", "on": "mahout", "move": "crane_up", "amount": 0.22, "shake": 0.25},
+      "hits": ["w:25", "w:31"],
+      "layers": [
+        {
+          "depth": 4.8,
+          "items": [
+            {"kind": "mountains", "h": 490, "y": 730, "color": "slate", "snow": true},
+            {"kind": "clouds", "y": 210, "count": 7, "color": "slate"}
+          ]
+        },
+        {
+          "depth": 2.2,
+          "items": [
+            {"kind": "hills", "h": 240, "y": 790, "color": "stone"},
+            {"kind": "tree", "type": "pine", "x": 420, "y": 800, "h": 310},
+            {"kind": "tree", "type": "pine", "x": 1460, "y": 800, "h": 330}
+          ]
+        },
+        {
+          "depth": 1.4,
+          "items": [
+            {
+              "kind": "army",
+              "x0": 220,
+              "x1": 1480,
+              "y": 842,
+              "rows": 2,
+              "count": 24,
+              "size": 125,
+              "colors": ["crimson", "purple", "bronze"],
+              "head": "cone",
+              "head_color": "bronze",
+              "carry": "spear",
+              "march": 1.5,
+              "advance": true
+            }
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "road", "y": 848, "h": 42, "color": "stone"},
+            {"kind": "rock", "x": 480, "y": 855, "w": 110},
+            {"kind": "rock", "x": 1360, "y": 855, "w": 130}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "mahout",
+          "x": 820,
+          "mount": {"type": "elephant", "color": "grey", "tack": "crimson"},
+          "pose": "ride",
+          "expr": "determined",
+          "keys": [
+            {"t": "95%", "x": 1080}
+          ]
+        },
+        {
+          "id": "mahout2",
+          "cast": "mahout",
+          "x": 460,
+          "scale": 0.88,
+          "mount": {"type": "elephant", "color": "grey", "tack": "gold"},
+          "pose": "ride",
+          "expr": "determined",
+          "keys": [
+            {"t": "95%", "x": 700}
+          ]
+        },
+        {
+          "id": "hannibal",
+          "x": 1120,
+          "pose": "charge",
+          "expr": "shout",
+          "talk": true,
+          "keys": [
+            {"t": "95%", "x": 1340}
+          ]
+        }
+      ],
+      "fx": ["snow", "fog"],
+      "text": [
+        {"kind": "label", "text": "37 Savaş Fili · Alpler", "sub": "2.500 METRE İRTİFA · EKİM MÖ 218", "t": 0.25}
+      ]
+    },
+    {
+      "id": "S4",
+      "start": "s:3",
+      "transition": "flash",
+      "time": "night",
+      "camera": {"frame": "wide", "on": "hannibal", "move": "push_in", "amount": 0.22, "rot": 2.0, "shake": 0.35},
+      "hits": ["w:35", "w:46"],
+      "layers": [
+        {
+          "depth": 4.5,
+          "items": [
+            {"kind": "mountains", "h": 520, "y": 730, "color": "slate", "snow": true}
+          ]
+        },
+        {
+          "depth": 2.0,
+          "items": [
+            {"kind": "hills", "h": 250, "y": 795, "color": "slate"},
+            {"kind": "rock", "x": 560, "y": 825, "w": 160, "color": "snow"},
+            {"kind": "rock", "x": 1220, "y": 825, "w": 190, "color": "snow"},
+            {"kind": "tree", "type": "bare", "x": 380, "y": 820, "h": 280}
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "road", "y": 848, "h": 42, "color": "snow"},
+            {"kind": "fire", "x": 980, "y": 848, "scale": 0.95}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "hannibal",
+          "x": 840,
+          "pose": "charge",
+          "expr": "determined",
+          "talk": true,
+          "hold": {"near": {"kind": "torch"}},
+          "keys": [
+            {"t": "35%", "x": 900, "pose": "kneel", "expr": "pain"},
+            {"t": "70%", "x": 950, "pose": "point", "expr": "shout", "ease": "out_back"}
+          ]
+        },
+        {
+          "id": "soldier1",
+          "cast": "carthaginian",
+          "x": 660,
+          "pose": "kneel",
+          "expr": "pain",
+          "hold": {"near": {"kind": "torch"}}
+        },
+        {
+          "id": "soldier2",
+          "cast": "carthaginian",
+          "x": 1120,
+          "face": -1,
+          "pose": "guard",
+          "expr": "pain"
+        }
+      ],
+      "veil": 0.34,
+      "lights": [
+        {"x": 900, "y": 660, "r": 540, "color": "#ffa84a", "strength": 0.48, "flicker": 1},
+        {"x": 660, "y": 690, "r": 420, "color": "#ffa84a", "strength": 0.35, "flicker": 1}
+      ],
+      "fx": ["snow", "lightning"]
+    },
+    {
+      "id": "S5",
+      "start": "s:4",
+      "transition": "dissolve",
+      "time": "dawn",
+      "camera": [
+        {"t": 0, "frame": "medium", "on": "roman"},
+        {"t": "42%", "frame": "wide", "on": ["hannibal", "roman"], "ease": "in_out_cubic"},
+        {"t": "90%", "frame": "wide", "on": "hannibal", "ease": "out_cubic"}
+      ],
+      "hits": ["w:53", "w:55"],
+      "layers": [
+        {
+          "depth": 5.0,
+          "items": [
+            {"kind": "sun", "x": 960, "y": 270, "r": 85},
+            {"kind": "mountains", "h": 420, "y": 720, "color": "stone", "snow": true}
+          ]
+        },
+        {
+          "depth": 2.4,
+          "items": [
+            {"kind": "wall", "x": 1320, "y": 760, "w": 720, "h": 130, "crenel": true, "color": "stone"},
+            {"kind": "tower", "x": 1080, "y": 760, "w": 110, "h": 240, "roof": "crenel"},
+            {"kind": "banner", "x": 1220, "y": 760, "colors": ["crimson", "gold"], "emblem": "sun", "emblem_color": "gold"}
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "road", "y": 848, "h": 42, "color": "sandstone"}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "mahout",
+          "x": 600,
+          "mount": {"type": "elephant", "color": "grey", "tack": "gold"},
+          "pose": "ride",
+          "expr": "determined",
+          "keys": [
+            {"t": "90%", "x": 700}
+          ]
+        },
+        {
+          "id": "hannibal",
+          "x": 820,
+          "mount": {"type": "horse", "color": "black", "tack": "gold"},
+          "pose": "ride",
+          "expr": "determined",
+          "talk": true,
+          "keys": [
+            {"t": "45%", "x": 890, "pose": "point", "expr": "shout"}
+          ]
+        },
+        {
+          "id": "roman",
+          "x": 1070,
+          "face": -1,
+          "pose": "guard",
+          "expr": "neutral",
+          "keys": [
+            {"t": "28%", "pose": "surprised", "expr": "shock", "ease": "out_back"}
+          ]
+        }
+      ],
+      "lights": [
+        {"x": 960, "y": 300, "r": 900, "strength": 0.25}
+      ],
+      "fx": ["fog", "rays"],
+      "text": [
+        {"kind": "label", "text": "Po Ovası · Kuzey İtalya", "sub": "ROMA LEJYONLARI · KASIM MÖ 218", "t": 0.2}
+      ]
+    },
+    {
+      "id": "S6",
+      "start": "s:5",
+      "transition": "zoom",
+      "time": "day",
+      "camera": {"frame": "wide", "on": "hannibal", "move": "pull_out", "amount": 0.24},
+      "hits": ["w:64"],
+      "layers": [
+        {
+          "depth": 5.0,
+          "items": [
+            {"kind": "sun", "x": 1460, "y": 240, "r": 80},
+            {"kind": "mountains", "h": 340, "y": 730, "color": "slate", "snow": true}
+          ]
+        },
+        {
+          "depth": 2.4,
+          "items": [
+            {"kind": "skyline", "y": 740, "h": 140, "flavor": ["dome", "tower", "block"], "x0": 240, "x1": 1780, "color": "slate"}
+          ]
+        },
+        {
+          "depth": 1.4,
+          "items": [
+            {
+              "kind": "army",
+              "x0": 220,
+              "x1": 1520,
+              "y": 842,
+              "rows": 2,
+              "count": 24,
+              "size": 125,
+              "colors": ["purple", "crimson"],
+              "head": "cone",
+              "head_color": "bronze",
+              "carry": "banner",
+              "march": 1.5,
+              "advance": true
+            }
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "road", "y": 848, "h": 44, "color": "sandstone"}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "hannibal",
+          "x": 880,
+          "mount": {"type": "horse", "color": "chestnut", "tack": "gold"},
+          "pose": "point",
+          "expr": "determined",
+          "talk": true
+        },
+        {
+          "id": "mahout",
+          "x": 600,
+          "mount": {"type": "elephant", "color": "grey", "tack": "crimson"},
+          "pose": "ride",
+          "expr": "determined"
+        },
+        {
+          "id": "officer",
+          "cast": "carthaginian",
+          "x": 1120,
+          "pose": "cheer",
+          "expr": "shout"
+        }
+      ],
+      "lights": [
+        {"x": 740, "y": 540, "r": 780, "strength": 0.35}
+      ],
+      "fx": ["rays"],
+      "text": [
+        {
+          "kind": "card",
+          "text": "Hannibal MÖ 218'de 37 savaş filiyle Alpleri 15 günde aştı;\nPo Ovası'na 26.000 askerle inerek Roma'yı şoka uğrattı.",
+          "source": "Kaynak: Polybius, Histories III.56 · Titus Livius XXI.38",
+          "t": "28%",
+          "y": 0.24
+        }
+      ]
+    }
+  ],
+  "sound": {
+    "music": {"mood": "epic", "gain": -23},
+    "events": [
+      {"t": "S2+0.2", "kind": "horn", "gain": -8, "pitch": 0.82},
+      {"t": "S3+0.15", "kind": "drum", "gain": -8},
+      {"t": "S4+0.1", "kind": "thunder", "gain": -7},
+      {"t": "S5+0.2", "kind": "horn", "gain": -7, "pitch": 0.95},
+      {"t": "S6+0.15", "kind": "bell", "gain": -8, "pitch": 0.9}
+    ]
+  }
+}

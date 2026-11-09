@@ -1,0 +1,261 @@
+{
+  "title": "1453: Gemiler Karadan Yürüyor",
+  "fps": 30,
+  "tail": 0.9,
+  "time": "dawn",
+  "formats": ["16:9", "9:16"],
+  "cast": {
+    "mehmed": {
+      "skin": "skin2",
+      "build": "broad",
+      "beard": {"style": "short", "color": "brown"},
+      "mustache": true,
+      "head": [
+        {"shape": "dome", "color": "white", "h": 1.15, "w": 1.25, "wrap": 3},
+        {"shape": "plume", "color": "white", "px": 0.25, "py": -1.35, "h": 0.82}
+      ],
+      "outfit": [
+        {"kind": "cape", "color": "crimson", "wind": 0.35},
+        {"kind": "kaftan", "color": "#2f6242", "trim": "gold", "pattern": "center", "pattern_color": "gold"},
+        {"kind": "sash", "color": "gold"}
+      ],
+      "sleeves": "#2f6242",
+      "hold": {"near": {"kind": "saber", "color": "steel", "hilt": "gold"}}
+    },
+    "pasha": {
+      "skin": "skin2",
+      "beard": {"style": "full", "color": "grey"},
+      "mustache": true,
+      "head": [{"shape": "dome", "color": "white", "h": 1.05, "w": 1.2, "wrap": 2}],
+      "outfit": [
+        {"kind": "kaftan", "color": "navy", "trim": "gold"},
+        {"kind": "sash", "color": "crimson"}
+      ],
+      "sleeves": "navy",
+      "hold": {"near": {"kind": "scroll", "open": true, "seal": "crimson"}}
+    },
+    "crew": {
+      "skin": "skin2",
+      "mustache": true,
+      "head": [{"shape": "dome", "color": "cream", "h": 0.9, "w": 1.15, "wrap": 2}],
+      "outfit": [
+        {"kind": "tunic", "color": "terracotta"},
+        {"kind": "belt", "color": "leather"}
+      ],
+      "sleeves": "terracotta",
+      "legwear": "tan",
+      "hold": {"near": {"kind": "torch"}}
+    }
+  },
+  "shots": [
+    {
+      "id": "S1",
+      "start": 0,
+      "transition": "cut",
+      "time": "day",
+      "ground": false,
+      "camera": {"frame": "stage", "move": "push_in", "amount": 0.22},
+      "hits": [1.1],
+      "layers": [
+        {
+          "depth": 1.0,
+          "items": [
+            {
+              "kind": "map",
+              "x0": -300,
+              "y0": -160,
+              "w": 2520,
+              "h": 1400,
+              "sea_color": "water",
+              "land_color": "sandstone",
+              "lands": [
+                {"points": [[-250, 580], [640, 540], [1000, 575], [1080, 760], [940, 1080], [-250, 1080]], "name": "KONSTANTİNOPOLİS", "lx": 830, "ly": 790, "size": 28},
+                {"points": [[620, 240], [1180, 245], [1220, 455], [980, 470], [700, 415]], "name": "GALATA", "lx": 930, "ly": 310, "size": 30},
+                {"points": [[1360, 180], [2180, 180], [2180, 1080], [1380, 1080], [1310, 580]], "name": "ÜSKÜDAR", "lx": 1560, "ly": 660, "size": 30}
+              ],
+              "routes": [
+                {"points": [[1220, 385], [1100, 305], [890, 335], [760, 450]], "color": "crimson", "from": 0.35, "to": 2.3, "dashed": true, "width": 10}
+              ],
+              "pins": [
+                {"x": 1050, "y": 515, "label": "Zincir", "icon": "battle", "t": 0.2, "pulse": true},
+                {"x": 755, "y": 465, "label": "Haliç", "icon": "star", "t": 1.6, "pulse": true}
+              ]
+            }
+          ]
+        }
+      ],
+      "text": [
+        {"kind": "year", "from": 1400, "to": 1453, "t": 0.15, "until": 2.6, "sub": "HALİÇ KUŞATMASI", "y": 0.16, "size": 150}
+      ]
+    },
+    {
+      "id": "S2",
+      "start": "s:1",
+      "transition": "whip",
+      "time": "interior",
+      "camera": [
+        {"t": 0, "frame": "full", "on": ["mehmed", "pasha"]},
+        {"t": "85%", "frame": "mcu", "on": "mehmed", "ease": "in_out_cubic"}
+      ],
+      "layers": [
+        {
+          "depth": 2.0,
+          "items": [
+            {"kind": "room", "x0": 180, "x1": 1740, "h": 680, "wall": "crimson", "floor": "wood", "trim": "gold"},
+            {"kind": "banner", "x": 480, "y": 240, "colors": ["crimson"], "emblem": "crescent", "emblem_color": "gold"},
+            {"kind": "banner", "x": 1440, "y": 240, "colors": ["crimson"], "emblem": "crescent", "emblem_color": "gold"}
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "furniture", "type": "map_table", "x": 960, "w": 280, "h": 105},
+            {"kind": "furniture", "type": "candle", "x": 860, "y": 755}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "mehmed",
+          "x": 790,
+          "pose": "stand_proud",
+          "expr": "determined",
+          "talk": true,
+          "keys": [
+            {"t": "35%", "x": 850, "pose": "point", "expr": "shout", "ease": "out_back"}
+          ]
+        },
+        {
+          "id": "pasha",
+          "x": 1110,
+          "face": -1,
+          "pose": "read",
+          "expr": "neutral",
+          "keys": [
+            {"t": "50%", "pose": "bow"}
+          ]
+        }
+      ],
+      "lights": [{"x": 860, "y": 680, "r": 580, "strength": 0.35, "flicker": 1}],
+      "text": [
+        {"kind": "label", "text": "Sultan II. Mehmed", "sub": "21 NİSAN 1453 · OTAĞ", "t": 0.25}
+      ]
+    },
+    {
+      "id": "S3",
+      "start": "s:2",
+      "transition": "whip",
+      "time": "night",
+      "camera": {"frame": "wide", "on": "crew", "move": "pan_right", "amount": 0.22},
+      "layers": [
+        {
+          "depth": 6.0,
+          "items": [
+            {"kind": "stars"},
+            {"kind": "moon", "x": 1460, "y": 190, "crescent": true}
+          ]
+        },
+        {
+          "depth": 2.2,
+          "items": [
+            {"kind": "hills", "h": 240, "y": 760, "color": "forest"},
+            {"kind": "tree", "type": "cypress", "x": 420, "y": 780, "h": 320},
+            {"kind": "tree", "type": "cypress", "x": 1520, "y": 780, "h": 340}
+          ]
+        },
+        {
+          "depth": 1.3,
+          "items": [
+            {"kind": "army", "x0": 260, "x1": 1420, "y": 845, "rows": 2, "count": 26, "size": 125, "colors": ["brown", "crimson"], "head": "turban", "head_color": "white", "carry": "none", "march": 1.4, "advance": true}
+          ]
+        },
+        {
+          "depth": 1.0,
+          "items": [
+            {"kind": "road", "y": 845, "h": 45, "color": "wood"},
+            {"kind": "ship", "type": "galley", "x": 860, "y": 835, "scale": 0.88, "stripes": "crimson", "rock": 1.0}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "crew",
+          "x": 1060,
+          "pose": "charge",
+          "expr": "determined",
+          "keys": [
+            {"t": "95%", "x": 1290}
+          ]
+        }
+      ],
+      "veil": 0.36,
+      "lights": [
+        {"x": 1120, "y": 660, "r": 520, "color": "#ffa84a", "strength": 0.45, "flicker": 1},
+        {"x": 820, "y": 680, "r": 460, "color": "#ffa84a", "strength": 0.35, "flicker": 1}
+      ],
+      "fx": ["embers"]
+    },
+    {
+      "id": "S4",
+      "start": "s:3",
+      "transition": "zoom",
+      "time": "dawn",
+      "camera": {"frame": "wide", "on": "mehmed", "move": "pull_out", "amount": 0.24},
+      "hits": [0.3],
+      "layers": [
+        {
+          "depth": 5.0,
+          "items": [
+            {"kind": "sun", "x": 1420, "y": 260, "r": 85},
+            {"kind": "mountains", "h": 240, "y": 680, "color": "stone"}
+          ]
+        },
+        {
+          "depth": 2.6,
+          "items": [
+            {"kind": "skyline", "y": 700, "h": 190, "flavor": ["dome", "tower", "block"], "x0": 200, "x1": 1850},
+            {"kind": "wall", "x": 1120, "y": 720, "w": 1500, "h": 140, "crenel": true, "color": "stone"},
+            {"kind": "tower", "x": 520, "y": 720, "w": 110, "h": 250, "roof": "crenel"},
+            {"kind": "tower", "x": 1680, "y": 720, "w": 110, "h": 250, "roof": "crenel"}
+          ]
+        },
+        {
+          "depth": 1.5,
+          "items": [
+            {"kind": "water", "y": 760, "deep": 120, "waves": 6},
+            {"kind": "ship", "type": "galley", "x": 980, "y": 780, "scale": 0.72, "stripes": "crimson"},
+            {"kind": "ship", "type": "galley", "x": 1380, "y": 785, "scale": 0.68, "stripes": "crimson"}
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "mehmed",
+          "x": 580,
+          "mount": {"type": "horse", "color": "chestnut", "tack": "gold"},
+          "pose": "point",
+          "expr": "determined"
+        }
+      ],
+      "lights": [{"x": 1420, "y": 300, "r": 900, "strength": 0.25}],
+      "fx": ["rays"],
+      "text": [
+        {
+          "kind": "card",
+          "text": "22 Nisan 1453 gecesi ~70 gemi kızaklarla\nGalata sırtlarından Haliç'e indirildi.",
+          "source": "Kaynak: Kritovulos, Tarih · Nicolò Barbaro, Günlük (1453)",
+          "t": "38%",
+          "y": 0.24
+        }
+      ]
+    }
+  ],
+  "sound": {
+    "music": {"mood": "eastern", "gain": -23},
+    "events": [
+      {"t": "S2+0.4", "kind": "paper", "gain": -8},
+      {"t": "S3+0.2", "kind": "horn", "gain": -7, "pitch": 0.85},
+      {"t": "S4+0.1", "kind": "bell", "gain": -8, "pitch": 0.9}
+    ]
+  }
+}

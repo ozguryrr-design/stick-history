@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+episodes/
+profile.json
+learned.md
+history.json
+style-preview.png
+.DS_Store

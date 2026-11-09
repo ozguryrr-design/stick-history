@@ -1,0 +1,51 @@
+{
+  "topic": "1453'te gemilerin karadan Haliç'e indirilmesi",
+  "event": "Osmanlı donanmasının Tophane-Kasımpaşa hattından kızaklarla Haliç'e indirilmesi",
+  "date": "21-22 Nisan 1453",
+  "place": "Konstantinopolis (İstanbul), Galata sırtları ve Haliç",
+  "formats": ["16:9", "9:16"],
+  "target_seconds": 13,
+  "people": [
+    {"id": "mehmed", "name": "Sultan II. Mehmed", "role": "21 yaşındaki Osmanlı padişahı"},
+    {"id": "pasha", "name": "Zağanos Paşa", "role": "Galata sırtlarındaki harekatı yöneten vezir"},
+    {"id": "crew", "name": "Levent ve lağımcılar", "role": "Gemileri kızaklarla çeken mürettebat"}
+  ],
+  "clothing": {
+    "ruler": "Beyaz sarık (örfi destar) ve sorguç, altın şeritli koyu yeşil/kırmızı kaftan, kuşak",
+    "vizier": "Sarıklı kavuk, lacivert kaftan, kuşak",
+    "crew": "Keçe külah veya börk, kahverengi tunik, deri kemer"
+  },
+  "objects": [
+    "Eğri kılıç (kılıç/yatağan)",
+    "Meşale",
+    "Kadırga (kürekli ve tek direkli savaş gemisi)",
+    "Ferman/harita parşömeni"
+  ],
+  "architecture": [
+    "Bizans kara ve Haliç surları (mazgallı taş sur ve burçlar)",
+    "Otağ-ı Hümayun (kırmızı-beyaz çadır)",
+    "Doğu Roma kubbe ve kule silüeti"
+  ],
+  "landscape": "Boğaz ve Haliç suları, Galata'nın dik tepeleri, selvi ağaçları",
+  "avoid": [
+    "fes",
+    "tüfek Süngüsü",
+    "buharlı gemi",
+    "modern top"
+  ],
+  "facts": [
+    {
+      "claim": "Haliç girişi 2 Nisan 1453'te ağır demir zincirle kapatıldı.",
+      "source": "Nicolò Barbaro, Konstantiniyye Muhasarası Ruznamesi (1453)"
+    },
+    {
+      "claim": "21-22 Nisan 1453 gecesi yaklaşık 67-72 parça gemi yağlanmış kütük kızaklar üzerinde Tophane'den Kasımpaşa'ya (Haliç'e) indirildi.",
+      "source": "Kritovulos, Tarih (II. Mehmed Dönemi); Aşıkpaşazade Tarihi"
+    }
+  ],
+  "sources": [
+    "Kritovulos, History of Mehmed the Conqueror",
+    "Nicolò Barbaro, Diary of the Siege of Constantinople (1453)",
+    "Halil İnalcık, Devlet-i Aliyye, Cilt I"
+  ]
+}

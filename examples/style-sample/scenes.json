@@ -1,0 +1,65 @@
+{
+  "title": "Style Preview",
+  "fps": 30,
+  "duration": 3.0,
+  "time": "dusk",
+  "cast": {
+    "commander": {
+      "skin": "skin2",
+      "build": "broad",
+      "beard": {"style": "full", "color": "brown"},
+      "mustache": true,
+      "head": [
+        {"shape": "dome", "color": "white", "h": 1.15, "w": 1.25, "wrap": 3},
+        {"shape": "plume", "color": "white", "px": 0.25, "py": -1.35, "h": 0.85}
+      ],
+      "outfit": [
+        {"kind": "cape", "color": "crimson", "wind": 0.4},
+        {"kind": "kaftan", "color": "crimson", "trim": "gold", "pattern": "center", "pattern_color": "gold"},
+        {"kind": "sash", "color": "gold"}
+      ],
+      "sleeves": "crimson",
+      "mount": {"type": "horse", "color": "chestnut", "tack": "gold"},
+      "hold": {"near": {"kind": "saber", "color": "steel", "hilt": "gold"}}
+    },
+    "scholar": {
+      "skin": "skin2",
+      "beard": {"style": "long", "color": "grey"},
+      "head": [{"shape": "hood", "color": "indigo"}],
+      "outfit": [
+        {"kind": "robe", "color": "indigo", "trim": "gold"},
+        {"kind": "belt", "color": "leather"}
+      ],
+      "sleeves": "indigo",
+      "hold": {"near": {"kind": "scroll", "open": true, "seal": "crimson"}}
+    }
+  },
+  "shots": [
+    {
+      "id": "S1",
+      "start": 0,
+      "camera": {"frame": "stage", "move": "drift", "amount": 0.1},
+      "layers": [
+        {"depth": 6, "items": [{"kind": "mountains", "h": 280, "y": 690, "color": "stone"}]},
+        {"depth": 3, "items": [
+          {"kind": "skyline", "y": 710, "h": 210, "flavor": ["dome", "minaret", "tower", "block"], "x0": 150, "x1": 1850, "lit": 0.8},
+          {"kind": "wall", "x": 1150, "y": 730, "w": 1300, "h": 150, "crenel": true, "color": "sandstone"}
+        ]},
+        {"depth": 1.8, "items": [
+          {"kind": "army", "x0": 980, "x1": 1750, "y": 820, "rows": 2, "count": 24, "size": 125, "colors": ["crimson", "navy"], "head": "helmet", "carry": "spear", "face": -1}
+        ]},
+        {"depth": 1, "items": [
+          {"kind": "tree", "type": "cypress", "x": 210, "h": 360},
+          {"kind": "tree", "type": "cypress", "x": 310, "h": 310}
+        ]}
+      ],
+      "actors": [
+        {"id": "commander", "x": 640, "pose": "point", "expr": "determined"},
+        {"id": "scholar", "x": 960, "face": -1, "pose": "read", "expr": "neutral"}
+      ],
+      "lights": [{"x": 680, "y": 480, "r": 650, "strength": 0.28}],
+      "fx": ["dust"],
+      "text": [{"kind": "label", "text": "Tarih Kanalı Stil Önizlemesi", "sub": "1453 · KONSTANTİNOPOLİS", "t": 0.2}]
+    }
+  ]
+}
